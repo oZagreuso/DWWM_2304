@@ -1,0 +1,15 @@
+﻿EXERCICE 1.2 : HELLO YOU
+L’utilisateur est invité à saisir son prénom dans la console.
+
+Le programme affiche “Bonjour “ suivi du prénom saisi.
+
+Déclaration des variables
+
+prénom est une chaine de caractère
+
+Traitement
+
+Ecrire " veuillez saisir votre prénom"
+Lire 
+
+Affichage
