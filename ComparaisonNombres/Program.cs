@@ -5,7 +5,7 @@
         int a;
         string saisie;
 
-        Console.WriteLine(" Bienvenue dans le programme de comparaison de nombres ");
+        Console.WriteLine(" Bienvenue dans le programme qui définit si vous êtes majeur ou pas");
 
         Console.WriteLine(" Veuillez renseigner un âge ");
 
@@ -17,23 +17,26 @@
 
         if (a < 0)
         {
-           (" vous n'etes pas encore nee ");
+            Console.WriteLine(" Vous n'êtes pas encore née ");
+
         }
 
         // si l'âge est inférieur à 18
-        else if (a < 18)
+        if (a < 18)
         {
-           (" vous ete mineur ");
+            if (a >= 0)
+            {
+                Console.WriteLine(" vous êtes mineur ");
+            }
         }
 
         // dans autres cas soit a>=18
 
-        else
+        if (a >= 18)
         {
-            (" vous ete majeur ");
+            Console.WriteLine(" vous êtes majeur ");
         }
      
 
     }
-}
 }

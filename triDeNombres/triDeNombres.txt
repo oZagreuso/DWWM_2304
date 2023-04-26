@@ -1,0 +1,24 @@
+﻿EXERCICE 2.1 : TRI DE NOMBRES
+Lire 2 nombres entier A et B puis les afficher dans l’ordre croissant.
+
+VARIABLES 
+
+a est un double
+b est un double
+	  
+TRAITEMENT
+	 
+Ecrire " bienvenue sur le programme de tri de nombres "
+Ecrire " Saisir nombre a "
+Lire a
+Ecrire " saisir nombre b " 
+Lire b	
+	  
+Si a < b
+	Ecrire a , b
+Sinon
+	Ecrire b , a	
+Fin SI
+
+Fin du programme
+		
