@@ -1,0 +1,69 @@
+﻿EXERCICE 2.5 : MA BICYCLETTE
+Réalisez l’algorithme et le programme correspondant au texte ci-dessous :
+
+S’il fait beau demain, j’irai faire une balade à bicyclette.
+
+Je n’ai pas utilisé ma bicyclette depuis plusieurs mois, peut-être n’est-elle plus en parfait état de fonctionnement.
+
+Si c’est le cas, je passerai chez le garagiste avant la balade. J’espère que les réparations seront immédiates sinon je devrai renoncer à la balade en bicyclette. Comme je veux de toute façon profiter du beau temps, si mon vélo n’est pas utilisable, j’irai à pied jusqu’à l’étang pour cueillir les joncs.
+
+S’il ne fait pas beau, je consacrerai ma journée à la lecture. J’aimerais relire le 1er tome de Game of Thrones. Je pense posséder ce livre, il doit être dans la bibliothèque du salon.
+
+Si je ne le retrouve pas, j’irai l’emprunter à la bibliothèque municipale. Si le livre n’est pas disponible, j’emprunterai un roman policier.
+
+Je rentrerai ensuite directement à la maison.
+
+Dès que j’aurai le livre qui me convient, je m’installerai confortablement dans un fauteuil et je me plongerai dans la lecture.
+
+VARIABLE
+
+A (il fait beau) est un booléen
+B (faire une balde à bicyclette) est un booléen
+C (Bicyclette est HS) est un booléen
+D (Passer chez le garagiste) est un booléen
+/B (renoncer à faire une balade en bicyclette) est un booléen
+E (aller à pied jusqu'à l'étang cueillir des joncs) est un booléen
+/A (il ne fait pas beau) est un booléen
+F (se consacrer à la lecture) est un booléen
+G (lire tome 1 GoT) est un booléen
+H (aller à la bibliothèque) est un booléen
+I (livre indisponible) est un booléen
+J (emprunter un roman policier) est un booléen
+K (rentrer à la maison) est un booléen
+L (s'installer dans le fauteuil) est un booléen
+M (livre trouvé) est un booléen
+
+TRAITEMENT
+
+Si A est vrai
+	Si /C est vrai
+		Alors B est vrai
+	Si C est vrai
+		Si D est vrai
+			Alors B est vrai
+		Si /D est vrai
+			Alors E est vrai
+Fin Si
+
+Si /A est vrai 
+	Si M est vrai 
+		Si L est vrai
+			Si G est vrai
+	Si /M est vrai
+		Si H est vrai
+			Si /I est vrai 
+				Si L est vrai
+					Alors G vrai
+			Si I est vrai
+				Si J est vrai
+					Si L est vrai
+						Alors G est vrai
+Fin Si
+
+FIN TRAITEMENT
+
+
+				
+
+		
+
