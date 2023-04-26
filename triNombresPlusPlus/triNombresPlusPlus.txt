@@ -1,0 +1,39 @@
+﻿EXERCICE 2.4 : TRI DE NOMBRES++
+
+Lire 3 nombres entier A, B et C puis les afficher dans l’ordre décroissant.
+
+VARIABLES
+ 
+a est un réel
+b est un réel
+c est un réel
+ 
+TRAITEMENT
+ 
+Ecrire " Programme de tri de nombres upgrade "
+Ecrire " Saisir nombre a "
+Lire a
+Ecrire " saisir nombre b " 
+Ecrire " saisir nombre c "
+Lire c
+
+Si a < b
+	Si b < c
+	  	Ecrire a, "<" , b , "<" , c
+	Sinon // b <= a
+		Si a < c
+	  		Ecrire a , "<" , c , "<" , b
+	  	Fin Si
+	Fin Si
+	Sinon // b <= a
+	  	Si a < c
+	  		Ecrire b , "<" , a , "<" , c
+	  	Sinon // c <= a
+	  			Si b < c
+	  				Ecrire b , "<" , c , "<" , a
+	  			Sinon // c <= b
+	  				Ecrire c , "<" , b , "<" , a
+	  			Fin SI
+	  		Fin Si
+	  Fin SI
+FIN TRAITEMENT
