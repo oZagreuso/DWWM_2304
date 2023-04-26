@@ -15,9 +15,9 @@ aire est un double
 TRAITEMENT
 
 Ecrire "bienvenue dans le programme de calcul de la surface d'un secteur circulaire"
-Ecrire " Veuillez saisir le rayon " 
+Ecrire " Veuillez saisir la valeur du rayon rayon " 
 Lire "R"
-Ecrire "Veuillez saisir l'angle "
+Ecrire "veuillez saisir la valeur de l'angle "
 Lire "A"
 Aire <-- (π R² A) / 360
 Ecrire "Le résultat pour l'aire du secteur circulaire est de" , aire "
