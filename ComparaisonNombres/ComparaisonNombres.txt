@@ -1,0 +1,26 @@
+﻿EXERCICE 2.1 : COMPARAISON DE NOMBRES
+
+Lire un nombre a correspondant à un âge (en années).
+Afficher "Vous êtes majeur" ou "Vous êtes mineur" selon le cas. La majorité est fixée à 18 ans. 
+Pour un nombre négatif le message doit être "Vous n'êtes pas encore né".
+
+VARIABLES
+
+a est un entire
+	  
+TRAITEMENT
+	  
+Ecrire " Bienvenue dans le programme de comparaison de nombres "
+Ecrire " Veuillez renseigner un age "
+Lire âge
+	  
+si age < 0
+	  		alors afficher " nous n'etes pas encore nee "
+	  
+sinon si age < 18	  		
+			alors afficher " vous etes mineur "
+	  
+sinon afficher " vous etes majeur "
+	  
+FIN TRAITEMENT
+	 

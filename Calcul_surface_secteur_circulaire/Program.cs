@@ -17,6 +17,8 @@
 
         Console.WriteLine(" Veuillez indiquer la valeur de l'angle A ");
 
+        saisie = Console.ReadLine();
+
         A = int.Parse(saisie);
 
         aire = (Math.PI * Math.Pow(R, 2) * A )/ 360;
