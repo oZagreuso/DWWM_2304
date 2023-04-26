@@ -42,7 +42,7 @@ Si A est vrai
 		Si D est vrai
 			Alors B est vrai
 		Si /D est vrai
-			Alors E est vrai
+			Alors Ecrire " j'irai à l'étang ceuillir des joncs "
 Fin Si
 
 Si /A est vrai 
@@ -53,11 +53,12 @@ Si /A est vrai
 		Si H est vrai
 			Si /I est vrai 
 				Si L est vrai
-					Alors G vrai
+					Alors Ecrire " je lis le tome1 de GoT "
 			Si I est vrai
 				Si J est vrai
-					Si L est vrai
-						Alors G est vrai
+					Si K est vrai
+						Si L est vrai
+							Alors Ecrire " je lis un roman policier "
 Fin Si
 
 FIN TRAITEMENT

@@ -17,7 +17,8 @@
 
         Console.WriteLine(" La bicyclette ");
 
-        if (bool.beauTemps == true)
+        Console.WriteLine(Convert.ToString(beauTemps));
+
 
     }
 }
