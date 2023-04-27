@@ -14,9 +14,13 @@ Lire a
 Ecrire " saisir nombre b " 
 Lire b	
 	  
-Si a < b
+SI a < b
+	SI (a != b)
 	Ecrire a , b
-Sinon
+	SINON
+	Ecrire a = b
+SINON
+	SI (a !=)
 	Ecrire b , a	
 Fin SI
 

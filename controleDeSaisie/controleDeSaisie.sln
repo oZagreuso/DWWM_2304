@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "controleDeSaisie", "controleDeSaisie.csproj", "{62372686-5D45-49AB-8DAC-2F0A5B6C000B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62372686-5D45-49AB-8DAC-2F0A5B6C000B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62372686-5D45-49AB-8DAC-2F0A5B6C000B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62372686-5D45-49AB-8DAC-2F0A5B6C000B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62372686-5D45-49AB-8DAC-2F0A5B6C000B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D97EDBB-4ED9-4242-B070-04703816D478}
+	EndGlobalSection
+EndGlobal

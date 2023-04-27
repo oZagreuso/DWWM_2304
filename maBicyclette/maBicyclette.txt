@@ -19,41 +19,42 @@ VARIABLE
 
 Boolean beauTemps;
 Boolean baladeBicyclette;
-Boolean bicycletteHS;
 Boolean allerGaragsite;
-Boolean allerEtang;
-Boolean lireGoT;
-Boolean allerBibliothèque;
 Boolean livreIndisponible;
-Boolean emprunterRomanPolicier;
-Boolean rentrerMaison;
-Boolean allerFauteuil;
 Boolean livreTrouvé;
 
 TRAITEMENT
 
 Si beauTemps est vrai
-	Si bicycletteHS est faux
-		Alors faire une balade à bicyclette est vrai
-	Si bicycletteHS est 
+	Si bicyclette HS est faux
+		Alors baladeBicyclette est vrai
+		Ecrire " il fait beau je vais faire une balade à bicyclette"
+	FIN SI	
+	Sinon bicyclette HS est vrai
 		Si est allerGragiste vrai
-			Alors faire balade Bicyclette est vrai
-		Si allerGaragiste est vrai
-			Alors Ecrire " j'irai à l'étang ceuillir des joncs "
-Fin Si
+			Alors baladeBicyclettee est vrai
+			Ecrire " mon vélo est réparé je vais me promener à bicyclette "
+		FIN SI
+		Sinon Si allerGaragiste est faux
+		Ecrire " je n'ai pas pu faire réparer mon vélo, j'irai donc à l'étang ceuillir des joncs "
+		FIN SI
+	FIN SI
+FIN SI
 
 Si beauTemps est faux
 	Si livreTrouvé est vrai 
-		Ecrire " je m'installerai dans le fauteuil pour lire Got "
+		Ecrire " j'ai trouvé le livre Got, je m'installe donc dans le fauteuil pour le lire "
+	FIN SI
 	Si livreTrouvé est faux
-		Si allerBibliothèque est vrai
-			Si livreIndisponible est faux 
-				Alors Ecrire " "je m'installerai dans le fauteuil pour lire Got ""
-			Si livreIndisponible est vrai
-				Si emprunterRomanPolicier est vrai
-					Alors Ecrire " je rentrerai à la maise, m'installerai dans le fauteuil et lirai un roman policier "
-					
-Fin Si
+		Ecrire " je vais à la bibliothèque chercher un livre "
+			Si livreIndisponible est faux 			
+				Alors Ecrire " j'ai trouvé le livre Got à la bibliothèque, je rentre chez moi et je m'installe dans le fauteuil pour le lire "
+			FIN SI
+			Sinon 
+			Ecrire " je rentre à la maison, avec un roman policier emprunté à la bibliothèque et je m'installe dans le fauteuil pour le lirer "
+			FIN SI
+	FIN SI					
+FIN SI
 
 FIN TRAITEMENT
 

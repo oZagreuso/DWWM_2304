@@ -15,14 +15,17 @@ Ecrire " Bienvenue dans le programme qui définit si vous êtes majeur ou pas "
 Ecrire " Veuillez renseigner un age "
 Lire âge
 	  
-si age < 0
+SI age < 0
 	Ecrire " nous n'etes pas encore née "
-	  
-sinon si age < 18	  		
+FIN SI
+
+SI age < 18	  		
 	Ecrire "vous êtes mineur "
+FIN SI
 	  
-sinon si age >= 18 
+SI age >= 18 
 	Ecrire " vous etes majeur "
+FIN SI
 	  
 FIN TRAITEMENT
 	 

@@ -3,7 +3,7 @@
     private static void Main(string[] args)
     {
         int A;
-        int X;
+        int X > ;
         string saisie;
 
         Console.WriteLine(" Bienvenue dans le programme VOTRE retraite ");
@@ -22,8 +22,12 @@
         {
             X = (60 - A);
             Console.WriteLine(" Il vous reste " + X + " années avant la retraite ");
+            
+            
         }
-
-
+        if (A >= 60) ;
+        {
+            Console.WriteLine(" vous êtes déjà retraité ");
+        }
     }
 }
