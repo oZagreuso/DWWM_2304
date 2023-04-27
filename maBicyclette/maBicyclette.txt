@@ -17,48 +17,42 @@ Dès que j’aurai le livre qui me convient, je m’installerai confortablement 
 
 VARIABLE
 
-A (il fait beau) est un booléen
-B (faire une balde à bicyclette) est un booléen
-C (Bicyclette est HS) est un booléen
-D (Passer chez le garagiste) est un booléen
-/B (renoncer à faire une balade en bicyclette) est un booléen
-E (aller à pied jusqu'à l'étang cueillir des joncs) est un booléen
-/A (il ne fait pas beau) est un booléen
-F (se consacrer à la lecture) est un booléen
-G (lire tome 1 GoT) est un booléen
-H (aller à la bibliothèque) est un booléen
-I (livre indisponible) est un booléen
-J (emprunter un roman policier) est un booléen
-K (rentrer à la maison) est un booléen
-L (s'installer dans le fauteuil) est un booléen
-M (livre trouvé) est un booléen
+Boolean beauTemps;
+Boolean baladeBicyclette;
+Boolean bicycletteHS;
+Boolean allerGaragsite;
+Boolean allerEtang;
+Boolean lireGoT;
+Boolean allerBibliothèque;
+Boolean livreIndisponible;
+Boolean emprunterRomanPolicier;
+Boolean rentrerMaison;
+Boolean allerFauteuil;
+Boolean livreTrouvé;
 
 TRAITEMENT
 
-Si A est vrai
-	Si /C est vrai
-		Alors B est vrai
-	Si C est vrai
-		Si D est vrai
-			Alors B est vrai
-		Si /D est vrai
+Si beauTemps est vrai
+	Si bicycletteHS est faux
+		Alors faire une balade à bicyclette est vrai
+	Si bicycletteHS est 
+		Si est allerGragiste vrai
+			Alors faire balade Bicyclette est vrai
+		Si allerGaragiste est vrai
 			Alors Ecrire " j'irai à l'étang ceuillir des joncs "
 Fin Si
 
-Si /A est vrai 
-	Si M est vrai 
-		Si L est vrai
-			Si G est vrai
-	Si /M est vrai
-		Si H est vrai
-			Si /I est vrai 
-				Si L est vrai
-					Alors Ecrire " je lis le tome1 de GoT "
-			Si I est vrai
-				Si J est vrai
-					Si K est vrai
-						Si L est vrai
-							Alors Ecrire " je lis un roman policier "
+Si beauTemps est faux
+	Si livreTrouvé est vrai 
+		Ecrire " je m'installerai dans le fauteuil pour lire Got "
+	Si livreTrouvé est faux
+		Si allerBibliothèque est vrai
+			Si livreIndisponible est faux 
+				Alors Ecrire " "je m'installerai dans le fauteuil pour lire Got ""
+			Si livreIndisponible est vrai
+				Si emprunterRomanPolicier est vrai
+					Alors Ecrire " je rentrerai à la maise, m'installerai dans le fauteuil et lirai un roman policier "
+					
 Fin Si
 
 FIN TRAITEMENT
