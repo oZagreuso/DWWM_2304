@@ -6,34 +6,33 @@ namespace ControleSaisieAvecLimite
     {
         static void Main(string[] args)
         {
-            string password = " formation ";
+            string password = "formation";
             string saisie;
-            int compteur = 0;
+            int essaiMdp = 0;
 
-            do
+
+            while (essaiMdp < 3) ;
             {
-                Console.WriteLine(" Saisir le mot-de-passe ");
+                Console.WriteLine(" Saisir mot-de-passe ");
 
                 saisie = Console.ReadLine();
-                                             
-                compteur++;                             
+
+                if (password == saisie) ;
+                {
+                    Console.WriteLine(" Vous êtes connecté ");
+                }
+                if ()
+                {
+                    Console.WriteLine(" Votre compte est bloqué ");
+                    return
+                }
+
 
             }
-            while (compteur <= 3);
-            {
-                do
-                {
-                    Console.WriteLine(" vous êtes connecté ");
-                }
-                while (password == saisie);
-                {
 
-                }
-            }
-
-
-
-            
         }
+
+
+
     }
 }

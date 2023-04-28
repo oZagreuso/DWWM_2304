@@ -14,8 +14,17 @@ Note : Le bon mot de passe est formation
 
 CONSTANTE
 
-password = formation est un string
-compteur = 0 est un entier
+//password = "formation" est un string
+essaiMdp = 0 est un entier
+essaisMax = 3 est un entier//
+
+VARIABLES
+
+saisie est un string
+
+
+
+
 
 TRAITEMENT
 
