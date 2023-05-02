@@ -7,13 +7,12 @@ namespace ControleSaisieAvecLimite
         static void Main(string[] args)
         {
             const string mdp = "formation";
-            int tentatives = 0;
-            string saisie;
+            int tentatives = 1;
+            string saisie;                    
 
-            Console.WriteLine(" Saisir mot-de-passe ");
-
-            while (tentatives < 3)
-            {                
+            while (tentatives <= 3)
+            {
+                Console.WriteLine(" Saisir mot-de-passe ");
                 saisie = Console.ReadLine();
 
                 if (saisie == mdp)
@@ -23,12 +22,17 @@ namespace ControleSaisieAvecLimite
                 }
                 else
                 {
-                    Console.WriteLine(" Votre mote-de-passe est erroné. Saisir nouveau mot-de-passe ");
+                    Console.WriteLine(" Votre mote-de-passe est erroné. ");
                     tentatives++;
                    
                 }
+      
 
 
+            }
+            if (tentatives > 3)
+            {
+                Console.WriteLine(" Votre compte est bloqué ");
             }
 
         }

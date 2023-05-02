@@ -19,23 +19,29 @@ mdp = "formation" est un string
 VARIABLES
 
 saisie est un string
-tentatives = 0 est un entier
+tentatives = 1 est un entier
 
 TRAITEMENT
 
+
+TANT QUE compteur <= 3
+
 ECRIRE " Saisir le mot-de-passe "
 LIRE "mdp"
-
-TANT QUE compteur < 3
 	
 	SI saisie = mdp	
 	ECRIRE " Vous êtes connecté "
 	RETOUR A LA BOUCLE
 
 	SINON
-	ECRIRE " Votre mot-de_passe est erroné. Saisir nouveau mot-de-passe "
+	ECRIRE " Votre mot-de_passe est erroné. "
 	tentatives ++
 
-	ECRIRE " Votre compte est bloqué "
+	FIN SI
 
-	
+
+SI tentatives > 3
+
+	ECRIRE " Votre compte est bloqué ";
+
+Fin SI
