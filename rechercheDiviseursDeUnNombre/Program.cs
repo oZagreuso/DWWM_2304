@@ -4,18 +4,18 @@
     {
         static void Main(string[] args)
         {
-            int N;
+            int n;
             int i;
 
             Console.WriteLine(" Programme de recherche des diviseurs d'un nombre ");
             Console.WriteLine(" Saisir nombre ");
             
-            N = int.Parse(Console.ReadLine());
-            Console.WriteLine(" Les diviseurs de " + N + " sont ");
+            n = int.Parse(Console.ReadLine());
+            Console.WriteLine(" Les diviseurs de " + n + " sont ");
 
-            for (i = 2; i < N; i ++)
+            for (i = 2; i < n; i ++)
             {
-                if (N % i == 0)
+                if (n % i == 0)
                 {
                     Console.WriteLine(i);
                 }

@@ -15,22 +15,25 @@ namespace intervalleDeuxNombres
 
             Console.WriteLine(" Saisir un second nombre entier ");
             saisie2 = int.Parse(Console.ReadLine());
+            
 
-            Console.WriteLine(" L'intervalle entre A et B se compose de " );
-
-            if (saisie < saisie2)
+            if (saisie < saisie2 && saisie != saisie2)
             {
                 for (int i = saisie + 1; i < saisie2; i++)
                 {
-                    Console.WriteLine(i);                  
+                    Console.WriteLine(" L'intervalle entre A et B se compose de "+i);                  
                 }
             }
             else
             {
                 for (int i = saisie - 1; i > saisie2; i--)
                 {
-                    Console.WriteLine(i);              
+                    Console.WriteLine(" L'intervalle entre A et B se compose de " + i);
                 }
+            }
+            if (saisie == saisie2)
+            {
+                Console.WriteLine(" Il n'y a pas d'intervalle, nombres identiques ");
             }
 
         }
