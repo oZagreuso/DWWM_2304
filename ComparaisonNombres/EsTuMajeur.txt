@@ -1,0 +1,31 @@
+﻿EXERCICE 2.2 : ES-TU MAJEUR ?
+
+Lire un nombre A correspondant à un âge (en années).
+Afficher “Vous êtes majeur” ou “Vous êtes mineur” selon le cas.
+Pour un nombre négatif le message doit être “Vous n’êtes pas encore né”.
+La majorité est fixée à 18 ans.
+
+VARIABLES
+
+a est un entier
+	  
+TRAITEMENT
+	  
+Ecrire " Bienvenue dans le programme qui définit si vous êtes majeur ou pas "
+Ecrire " Veuillez renseigner un age "
+Lire âge
+	  
+SI age < 0
+	Ecrire " nous n'etes pas encore née "
+FIN SI
+
+SI age < 18	  		
+	Ecrire "vous êtes mineur "
+FIN SI
+	  
+SI age >= 18 
+	Ecrire " vous etes majeur "
+FIN SI
+	  
+FIN TRAITEMENT
+	 

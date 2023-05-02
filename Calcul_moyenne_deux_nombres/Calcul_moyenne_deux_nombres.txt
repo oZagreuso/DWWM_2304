@@ -1,0 +1,26 @@
+﻿EXERCICE 1.3 : CALCUL DE LA MOYENNE DE 2 NOMBRES
+L’utilisateur est invité à saisir 2 nombres entier.
+
+Le programme calcule la moyenne des 2 nombres et affiche le résultat sous forme de nombre décimal.
+
+DECLARATION DES VARIABLES
+
+nombre 1 est un entier
+nombre 2 est un entier
+moyenne est un réel double précision
+
+TRAITEMENT
+
+Ecrire "Programme de calcul de la moyenne de deux nombres"
+Ecrire "veuillez saisir un premier nombre"
+Lire "nombre 1"
+Ecrire "veuillez saisir un second nombre"
+Lire "nombre 2"
+Moyenne <- (nombre 1 + nombre 2)/2.0
+Ecrire " La moyenne de " , nombre 1, " et " ,nombre2, " est " moyenne
+
+FIN TRAITEMENT
+
+
+
+

@@ -1,0 +1,25 @@
+﻿EXERCICE 1.6 : INVERSION DE 2 VALEURS
+Lire 2 nombres entier A et B.
+Afficher la valeur de A puis la valeur de B.
+Mettre le contenu de A dans B et celui de B dans A.
+Afficher à nouveau la valeur de A puis la valeur de B.
+
+VARIABLES
+
+A est un entier
+B est un entier
+temp est un entier
+
+TRAITEMENT
+
+Ecrire " Bienvenue dans ce programme d'inversion de deux valeurs"
+Ecrire " Veuillez renseigner une valeur de A "
+Lire a
+Ecrire " Veuillez renseigner une valeur de B "
+Lire b
+tmp = a
+a = b
+b = temp
+Ecrire " Après permutation la valeur de A est de , A , et la valeur de B est de , B "
+
+FIN TRAITEMENT

@@ -1,0 +1,65 @@
+﻿EXERCICE 2.5 : MA BICYCLETTE
+Réalisez l’algorithme et le programme correspondant au texte ci-dessous :
+
+S’il fait beau demain, j’irai faire une balade à bicyclette.
+
+Je n’ai pas utilisé ma bicyclette depuis plusieurs mois, peut-être n’est-elle plus en parfait état de fonctionnement.
+
+Si c’est le cas, je passerai chez le garagiste avant la balade. J’espère que les réparations seront immédiates sinon je devrai renoncer à la balade en bicyclette. Comme je veux de toute façon profiter du beau temps, si mon vélo n’est pas utilisable, j’irai à pied jusqu’à l’étang pour cueillir les joncs.
+
+S’il ne fait pas beau, je consacrerai ma journée à la lecture. J’aimerais relire le 1er tome de Game of Thrones. Je pense posséder ce livre, il doit être dans la bibliothèque du salon.
+
+Si je ne le retrouve pas, j’irai l’emprunter à la bibliothèque municipale. Si le livre n’est pas disponible, j’emprunterai un roman policier.
+
+Je rentrerai ensuite directement à la maison.
+
+Dès que j’aurai le livre qui me convient, je m’installerai confortablement dans un fauteuil et je me plongerai dans la lecture.
+
+VARIABLE
+
+Boolean beauTemps;
+Boolean baladeBicyclette;
+Boolean allerGaragsite;
+Boolean livreIndisponible;
+Boolean livreTrouvé;
+
+TRAITEMENT
+
+Si beauTemps est vrai
+	Si bicyclette HS est faux
+		Alors baladeBicyclette est vrai
+		Ecrire " il fait beau je vais faire une balade à bicyclette"
+	FIN SI	
+	Sinon bicyclette HS est vrai
+		Si est allerGragiste vrai
+			Alors baladeBicyclettee est vrai
+			Ecrire " mon vélo est réparé je vais me promener à bicyclette "
+		FIN SI
+		Sinon Si allerGaragiste est faux
+		Ecrire " je n'ai pas pu faire réparer mon vélo, j'irai donc à l'étang ceuillir des joncs "
+		FIN SI
+	FIN SI
+FIN SI
+
+Si beauTemps est faux
+	Si livreTrouvé est vrai 
+		Ecrire " j'ai trouvé le livre Got, je m'installe donc dans le fauteuil pour le lire "
+	FIN SI
+	Si livreTrouvé est faux
+		Ecrire " je vais à la bibliothèque chercher un livre "
+			Si livreIndisponible est faux 			
+				Alors Ecrire " j'ai trouvé le livre Got à la bibliothèque, je rentre chez moi et je m'installe dans le fauteuil pour le lire "
+			FIN SI
+			Sinon 
+			Ecrire " je rentre à la maison, avec un roman policier emprunté à la bibliothèque et je m'installe dans le fauteuil pour le lirer "
+			FIN SI
+	FIN SI					
+FIN SI
+
+FIN TRAITEMENT
+
+
+				
+
+		
+
