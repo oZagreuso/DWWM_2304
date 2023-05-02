@@ -13,11 +13,11 @@
             N = int.Parse(Console.ReadLine());
             Console.WriteLine(" Les diviseurs de " + N + " sont ");
 
-            for (i = 2; i < N; i += 2)
+            for (i = 2; i < N; i ++)
             {
                 if (N % i == 0)
                 {
-                    Console.WriteLine( + i);
+                    Console.WriteLine(i);
                 }
             }
         }

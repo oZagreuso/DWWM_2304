@@ -7,7 +7,7 @@ namespace nombrePremier
         static void Main(string[] args)
         {
             int nombreATester;
-            int diviseur = 2;       
+            int diviseur = 1;       
 
             Console.WriteLine(" Saisir un nombre ");
             nombreATester = int.Parse(Console.ReadLine());

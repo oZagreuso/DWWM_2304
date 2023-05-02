@@ -14,7 +14,7 @@ ECRIRE " Saisir un nombre "
 Lire "N"
 ECRIRE  Les diviseurs de, " N ", sont 
 	
-POUR i de 2 à N , i < N
+POUR i <- 2  i < N i +=
 	SI mod i == 0
 	ECRIRE " i "
 	FIN SI
