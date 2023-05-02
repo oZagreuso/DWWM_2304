@@ -14,30 +14,27 @@ Note : Le bon mot de passe est formation
 
 CONSTANTE
 
-//password = "formation" est un string
-essaiMdp = 0 est un entier
-essaisMax = 3 est un entier//
+mdp = "formation" est un string
 
 VARIABLES
 
 saisie est un string
-
-
-
-
+tentatives = 0 est un entier
 
 TRAITEMENT
 
+ECRIRE " Saisir le mot-de-passe "
+LIRE "mdp"
 
-	ECRIRE " Saisir le mot-de-passe "
-	compteur++
-
-TANT QUE compteur <= 3
+TANT QUE compteur < 3
 	
-	password = saisie
+	SI saisie = mdp	
 	ECRIRE " Vous êtes connecté "
+	RETOUR A LA BOUCLE
 
-TANT QUE compteur > 3
+	SINON
+	ECRIRE " Votre mot-de_passe est erroné. Saisir nouveau mot-de-passe "
+	tentatives ++
 
 	ECRIRE " Votre compte est bloqué "
 
