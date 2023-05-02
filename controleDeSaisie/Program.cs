@@ -12,7 +12,6 @@
 
             saisie = Console.ReadLine();
         }
-
         while (saisie.Length < 2);
 
         Console.WriteLine(" Bonjour " + saisie);

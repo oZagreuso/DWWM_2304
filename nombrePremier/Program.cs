@@ -6,22 +6,28 @@ namespace nombrePremier
     {
         static void Main(string[] args)
         {
-            int N;
-            int i;
+            int nombreATester;
+            int diviseur = 2;       
 
             Console.WriteLine(" Saisir un nombre ");
-            N = int.Parse(Console.ReadLine());
-            Console.WriteLine(N + " est un nombre premier ");
+            nombreATester = int.Parse(Console.ReadLine());
 
-                for (i = 2; i <= N - 1; i++)
-                {
-                    if (N % i != 0)
-                    {
-                        Console.WriteLine(i);
-                    }
+            do
+            {              
+                diviseur++;
+            }
+            while (nombreATester % diviseur != 0);             
+                
+            if (nombreATester == diviseur)
+            {
+                Console.WriteLine(nombreATester + " est un nombre premier ");
+            }
+            else
+            {
+                Console.WriteLine(nombreATester + " n'est pas un nombre premier ");
+            }
 
-                }
-            
+             
         }
      
     }

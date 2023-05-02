@@ -8,36 +8,33 @@ namespace ControleSaisieAvecLimite
         {
             const string mdp = "formation";
             int tentatives = 1;
-            string saisie;                    
-
-            while (tentatives <= 3)
-            {
-                Console.WriteLine(" Saisir mot-de-passe ");
-                saisie = Console.ReadLine();
-
-                if (saisie == mdp)
+            string saisie;
+                        
+                do
                 {
-                    Console.WriteLine(" Vous êtes connecté ");
+                    Console.WriteLine(" Saisir mot-de-passe ");
+                    saisie = Console.ReadLine();
+
+                    if (saisie == mdp)
+                    {
+                        Console.WriteLine(" Vous êtes connecté ");
+                    }
+                    else
+                    {
+                        Console.WriteLine(" Votre mot-de-passe est erroné ");
+                        tentatives++;
+                    }
+                }                
+                while (tentatives <= 3 && saisie != mdp);
                     
-                }
-                else
-                {
-                    Console.WriteLine(" Votre mote-de-passe est erroné. ");
-                    tentatives++;
-                   
-                }
-      
+                    if (tentatives > 3)
+                    {
+                        Console.WriteLine(" Votre compte est bloqué ");
+                    }
+                
 
 
-            }
-            if (tentatives > 3)
-            {
-                Console.WriteLine(" Votre compte est bloqué ");
-            }
-
+            
         }
-
-
-
     }
 }

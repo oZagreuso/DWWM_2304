@@ -23,25 +23,22 @@ tentatives = 1 est un entier
 
 TRAITEMENT
 
-
-TANT QUE compteur <= 3
+FAIRE
 
 ECRIRE " Saisir le mot-de-passe "
 LIRE "mdp"
 	
 	SI saisie = mdp	
-	ECRIRE " Vous êtes connecté "
-	RETOUR A LA BOUCLE
-
+	ECRIRE " Vous êtes connecté "	
 	SINON
 	ECRIRE " Votre mot-de_passe est erroné. "
 	tentatives ++
 
 	FIN SI
 
-
-SI tentatives > 3
-
+TANT QUE tentatives > 3 et saisie != mdp
+	SI tentatives > 3
 	ECRIRE " Votre compte est bloqué ";
+	FIN SI
+FIN TANT QUE
 
-Fin SI
