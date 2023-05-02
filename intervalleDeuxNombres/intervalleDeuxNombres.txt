@@ -1,0 +1,30 @@
+﻿EXERCICE 3.3 : INTERVALLE ENTRE 2 NOMBRES
+
+Lire 2 nombres entier A et B puis afficher tous les nombres entier dans l’intervalle.
+
+VARIABLES
+
+A est un entier
+B est un entier
+saisie est un string
+saisie2 est un string
+
+TRAITEMENT
+
+ECRIRE " Saisir un nombre entier A "
+LIRE " saisie "
+ECRIRE " Saisir un nombre entier B "
+LIRE " saisie2 "
+
+
+ECRIRE " L'intervalle entre A est B se compose de "
+
+SI saisie < saisie2
+	POUR entier i <- +1, quand i < saisie2, i++
+	
+	LIRE " i "
+
+SINON
+	POUR i <- -1, quand i > saisie2, i--
+
+	LIRE " i "
