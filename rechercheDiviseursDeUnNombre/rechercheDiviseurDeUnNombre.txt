@@ -1,0 +1,24 @@
+﻿EXERCICE 3.4 : RECHERCHE DES DIVISEURS D’UN NOMBRE
+
+Lire un nombre entier et afficher tous ses diviseurs autres que 1 et lui-même.
+
+VARIABLES
+
+N est un entier
+i est un entier
+
+TRAITEMENT 
+
+ECRIRE " Programme de recherche des diviseurs d'un nombre "
+ECRIRE " Saisir un nombre "
+Lire "N"
+ECRIRE  Les diviseurs de, " N ", sont 
+	
+POUR i de 2 à N , i < N
+	SI mod i == 0
+	ECRIRE " i "
+	FIN SI
+FIN POUR
+		
+	
+		
