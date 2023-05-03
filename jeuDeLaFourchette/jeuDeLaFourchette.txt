@@ -12,47 +12,47 @@ Bravo vous avez trouvé en X essais.
 
 VARIABLES
 
-n est un entier
+nombreMystere est un entier
 saisie est un entier
-nombreMin <- 0
-nombreMax <- 100
-nombreEssais
+cadreMin <- 0
+cadreMax <- 100
+nombreEssais <- 0
 
 TRAITEMENT
 
 ECRIRE " Bienvenue sur le jeu de la Fourchette "
 
-n <- RANDOM ( nombreMin , nombreMax ) 
+nombreMystere <- RANDOM ( nombreMin , nombreMax ) 
 
 FAIRE
 
-	ECRIRE " Saisir un nombre entre 0 et 100 "
+	ECRIRE " Saisir un nombre entre " , cadreMin , et , cadreMax
 	LIRE " saisie "
 
-TANT QUE 
-	
-	n est != de saisie
-
-		SI saisie = n
-			ALORS 
-			ECRIRE " Bravo vous avez trouvé en " , nombreEssais , " essais "
-		FIN SI
-	
-		SI n < saisie
-			ALORS 
-			ECRIRE " Le nombre , saisie , est supérieur à la fourchette "
-			nombreMax <- saisie - 1
+		SI nombreMystere est inférieur à la saisie
+		ALORS 
+		ECRIRE " Votre choix est supérieur au nombre mystère "
+			cadreMax <- saisie - 1
 		FIN SI
 
-		SI n > saisie
-			ALORS
-			ECRIRE " le nombre , saisie , est inférieur à la fourchette "
-			nombreMin <- saisie + 1
+		SI nombreMystère est supérieur à la saisie
+		ALORS
+		ECRIRE " Votre choix est inférieur au nombre mystère "
+			cadreMin <- saisie + 1
 		FIN SI
 
 		nombresEssais + 1
 
-	FIN TANT QUE
+TANT QUE 
+	
+	nombreMystere est != de saisie
+
+		SI saisie = nombreMystere
+			ALORS 
+			ECRIRE " Bravo vous avez trouvé en " , nombreEssais , " essais "
+		FIN SI
+		
+FIN TANT QUE
 
 
 			
