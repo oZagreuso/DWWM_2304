@@ -1,0 +1,59 @@
+﻿EXERCICE 3.6 : JEU DE LA FOURCHETTE
+
+L’ordinateur « choisit » aléatoirement un nombre mystère (entier compris entre 0 et 100).
+Le joueur essaie de le deviner.
+Lors de chaque essai, l’ordinateur affiche la « fourchette » dans laquelle se trouve le nombre qu’il a choisi.
+
+Le choix du nombre mystère sera simulé par génération d’un nombre aléatoire : N <-- RANDOM(0,100).
+
+Lorsque l’utilisateur a trouvé le nombre mystère, le programme affiche :
+
+Bravo vous avez trouvé en X essais.
+
+VARIABLES
+
+n est un entier
+saisie est un entier
+nombreMin <- 0
+nombreMax <- 100
+nombreEssais
+
+TRAITEMENT
+
+ECRIRE " Bienvenue sur le jeu de la Fourchette "
+
+n <- RANDOM ( nombreMin , nombreMax ) 
+
+FAIRE
+
+	ECRIRE " Saisir un nombre entre 0 et 100 "
+	LIRE " saisie "
+
+TANT QUE 
+	
+	n est != de saisie
+
+		SI saisie = n
+			ALORS 
+			ECRIRE " Bravo vous avez trouvé en " , nombreEssais , " essais "
+		FIN SI
+	
+		SI n < saisie
+			ALORS 
+			ECRIRE " Le nombre , saisie , est supérieur à la fourchette "
+			nombreMax <- saisie - 1
+		FIN SI
+
+		SI n > saisie
+			ALORS
+			ECRIRE " le nombre , saisie , est inférieur à la fourchette "
+			nombreMin <- saisie + 1
+		FIN SI
+
+		nombresEssais + 1
+
+	FIN TANT QUE
+
+
+			
+
