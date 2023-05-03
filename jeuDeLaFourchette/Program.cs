@@ -26,20 +26,21 @@
                     Console.WriteLine(" Votre choix est supérieur au nombre mystère ");
                     cadreMax = saisie - 1;
                 }
-                if (nombreMystere > saisie)
+                else if (nombreMystere > saisie)
                 {
                     Console.WriteLine(" Votre choix est inférieur au nombre mystère ");
                     cadreMin = saisie + 1;
                 }
+
+                if (nombreMystere == saisie)
+                {
+                    Console.WriteLine(" Bravo vous avez trouvé en " + nombreEssais + " essais ");
+                }
+
                 nombreEssais++;
             }
             while (nombreMystere != saisie);
 
-            if (nombreMystere == saisie)
-            {
-                Console.WriteLine(" Bravo vous avez trouvé en " + nombreEssais + " essais ");
-            }
-            
         }
     }
 }

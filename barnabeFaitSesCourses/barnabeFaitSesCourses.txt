@@ -1,0 +1,34 @@
+﻿EXERCICE 3.7 : BARNABÉ FAIT SES COURSES
+
+Barnabé fait ses courses dans plusieurs magasins.
+
+Dans chacun, il dépense 1 € de plus que la moitié de ce qu’il possédait en entrant.
+
+Dans le dernier magasin, il dépense le solde.
+
+Soit la somme S dont il disposait au départ (S > 1 €).
+
+Représenter l’algorithme permettant de trouver le nombre de magasins dans lesquels il a acheté.
+
+VARIABLES
+
+soldeRestant est un double
+magasinVisite = 0 est un entier
+
+TRAITEMENT
+
+ECRIRE " Barnabé fait ses courses "
+
+ECRIRE " indiquer le solde initial du compte de Barnabé "
+LIRE " soldeRestant "
+
+TANT QUE solde est supérieur ou égal à depense
+
+Incrémenter magasinVisite
+
+FIN TANT QUE
+
+SI solde est inférieur à 1
+
+ECRIRE " le nombre de magasins visités est de " , magasinVisite 
+
