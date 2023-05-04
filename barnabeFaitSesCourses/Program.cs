@@ -11,19 +11,15 @@
             Console.WriteLine(" Barnabé fait ses courses ");
             Console.WriteLine(" indiquer le solde initial du compte de Barnabé ");
             solde = double.Parse(Console.ReadLine());
-            depenses = ((solde / 2) + 1);
 
-            while (solde > depenses)
+            while (solde >= ((solde / 2) + 1))
             {
-                {                     
-                    solde = solde - ((solde / 2) + 1);
-                }
-                magasinVisite++;
-            }
-            if (solde <= depenses)
-            {
+            depenses = ((solde / 2) + 1);
+            solde = solde - depenses;                
+            magasinVisite++;
+            }          
                 Console.WriteLine(" le nombre de magasins visités est de " + magasinVisite);
-            }
+            
         }
     }
 }

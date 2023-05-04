@@ -23,7 +23,7 @@ ECRIRE " Barnabé fait ses courses "
 ECRIRE " indiquer le solde initial du compte de Barnabé "
 LIRE " solde "
 
-TANT QUE solde est supérieur depenses
+TANT QUE solde est supérieur ((solde))
 
 Incrémenter magasinVisite
 
