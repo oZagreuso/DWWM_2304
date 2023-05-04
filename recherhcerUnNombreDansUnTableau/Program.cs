@@ -1,10 +1,13 @@
-﻿namespace recherhcerUnNombreDansUnTableau
+﻿using System;
+
+namespace recherhcerUnNombreDansUnTableau
 {
     internal class Program
     {
         static void Main(string[] args)
-        {         
+        {
             int[] monTableau;
+            int saisie;
             monTableau = new int[7];
             monTableau[0] = 8;
             monTableau[1] = 16;
@@ -15,15 +18,29 @@
 
             for (int i = 0; i < monTableau.Length; i++)
             {
-                Console.WriteLine(monTableau[i]);
-                Console.WriteLine(" saisir un nombre ");
-                string saisie = Console.ReadLine();
-                
+                Console.WriteLine(" Saisir un nombre ");
+                saisie = int.Parse(Console.ReadLine());
+
                 foreach (int s in monTableau)
                 {
-                    Console.WriteLine(s);
-                }                  
+                    if (saisie == s)
+                    {
+
+                        Console.WriteLine(monTableau[i]);
+
+                    }
+
+                    else
+                    {
+                        Console.WriteLine(" Nombre non trouvé ");
+                    }
+
+
+
+
+                }
             }
         }
     }
 }
+    
