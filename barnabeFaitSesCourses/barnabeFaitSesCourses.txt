@@ -12,7 +12,8 @@ Représenter l’algorithme permettant de trouver le nombre de magasins dans les
 
 VARIABLES
 
-soldeRestant est un double
+solde est un double
+depenses = 0est un double
 magasinVisite = 0 est un entier
 
 TRAITEMENT
@@ -20,15 +21,15 @@ TRAITEMENT
 ECRIRE " Barnabé fait ses courses "
 
 ECRIRE " indiquer le solde initial du compte de Barnabé "
-LIRE " soldeRestant "
+LIRE " solde "
 
-TANT QUE solde est supérieur ou égal à depense
+TANT QUE solde est supérieur depenses
 
 Incrémenter magasinVisite
 
 FIN TANT QUE
 
-SI solde est inférieur à 1
+SI solde est inférieur à depenses
 
 ECRIRE " le nombre de magasins visités est de " , magasinVisite 
 
