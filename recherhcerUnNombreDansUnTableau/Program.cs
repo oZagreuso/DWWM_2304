@@ -8,7 +8,7 @@ namespace recherhcerUnNombreDansUnTableau
         {
             int[] monTableau;
             int saisie;
-            monTableau = new int[7];
+            monTableau = new int[6];
             monTableau[0] = 8;
             monTableau[1] = 16;
             monTableau[2] = 32;
@@ -34,10 +34,6 @@ namespace recherhcerUnNombreDansUnTableau
                     {
                         Console.WriteLine(" Nombre non trouvé ");
                     }
-
-
-
-
                 }
             }
         }
