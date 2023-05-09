@@ -6,6 +6,7 @@ namespace recherhcerUnNombreDansUnTableau
     {
         static void Main(string[] args)
         {
+            int i = 0;
             int[] monTableau;
             int saisie;
             monTableau = new int[7];
@@ -17,12 +18,11 @@ namespace recherhcerUnNombreDansUnTableau
             monTableau[5] = 256;
             monTableau[6] = 512;
 
-           
-            for (int i = 0; i < monTableau.Length; i++)
-            {
-                Console.WriteLine(" Saisir un nombre ");
-                saisie = int.Parse(Console.ReadLine());
+            Console.WriteLine(" Saisir un nombre ");
+            saisie = int.Parse(Console.ReadLine());
 
+            while (saisie < monTableau.Length)
+            {
                 if (saisie == monTableau[i])
                 {
                     Console.WriteLine(" La valeur de l'indice est " + i);
@@ -32,8 +32,10 @@ namespace recherhcerUnNombreDansUnTableau
                     Console.WriteLine(" Nombre non trouvé ");
                 }
             }
+       
         }
     }
+    
 }
     
 
