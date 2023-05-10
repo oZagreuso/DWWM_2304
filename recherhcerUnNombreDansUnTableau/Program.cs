@@ -21,22 +21,25 @@ namespace recherhcerUnNombreDansUnTableau
             Console.WriteLine(" Saisir un nombre ");
             saisie = int.Parse(Console.ReadLine());
 
-            while (saisie < monTableau.Length)
+            while (i < monTableau.Length && monTableau[i] != saisie)
             {
-                if (saisie == monTableau[i])
-                {
-                    Console.WriteLine(" La valeur de l'indice est " + i);
-                }
-                else
-                {
-                    Console.WriteLine(" Nombre non trouvé ");
-                }
+                i++;
             }
-       
+
+            if (i < monTableau.Length)
+            {
+                Console.WriteLine(" La valeur de l'indice est " + i);
+            }
+            else
+            {
+                Console.WriteLine(" Nombre non trouvé " );
+            }
+
+
         }
     }
-    
-}
-    
 
-    
+}
+
+
+

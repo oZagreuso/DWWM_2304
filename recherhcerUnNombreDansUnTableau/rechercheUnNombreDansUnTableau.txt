@@ -9,18 +9,24 @@ Si oui, afficher la valeur de l’indice correspondant. Sinon, afficher « Nombr
 
 VARIABLES
 
-nombreN est un entier 
+i = 0 est un entier 
 saisie est un entier
-tableau tableauRechercherNb(7) d'entier
+monTableau(7) d'entier
 
 TRAITEMENT
 
-POUR i de 0 à 6
 ECRIRE " Saisir un nombre "
-LIRE nombreN
-	SI saisie <- monTableau
-	ECRIRE " La valeur de l'indice est " , i
-	SINON ECRIRE " Nombre non trouvé "
-	FIN SI
-FIN POUR
+LIRE saisie
+
+TANT QUE i < à longueur de monTableau et que monTableau[i] != saisie
+	incrémenter i
+
+		SI saisie < à la longueur de mon tableau
+		ECRIRE " La valeur de l'indice est " , i
+	
+		SINON ECRIRE " Nombre non trouvé "
+		
+		FIN SI
+
+FIN TANT QUE
 
