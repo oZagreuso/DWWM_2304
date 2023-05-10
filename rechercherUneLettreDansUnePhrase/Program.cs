@@ -1,16 +1,50 @@
-﻿namespace rechercherUneLettreDansUnePhrase
+﻿using System.IO.IsolatedStorage;
+
+namespace rechercherUneLettreDansUnePhrase
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            char[] alpha = new char[] {'a','b' };
-            string alphabet="abcdefg";
+            string saisiePhrase;
+            char saisieLettre;
+            int i = 0;
+            int occurence = 0;
 
-            char a= alphabet[0];
-            
-            
+            Console.WriteLine(" Programme de recherche de lettres dans une phrase ");
 
+            Console.WriteLine(" Entrer une phrase ");
+            saisiePhrase = (Console.ReadLine());
+            Console.WriteLine(" Entrer une lettre ");
+            saisieLettre = char.Parse(Console.ReadLine());
+
+
+            if (saisiePhrase == "" || saisiePhrase == ".")
+            {
+                Console.WriteLine(" La phrase est vide ");
+            }
+            else
+            {
+               
+                while (i < saisiePhrase.Length - 1)
+                {
+                    if (saisieLettre == saisiePhrase[i])
+                    {
+                        occurence++;
+                    }
+                    i++;
+                }
+
+                if (occurence == 0)
+                {
+                    Console.WriteLine(" La lettre n'est pas présente ");
+                }
+                else
+                {
+                    Console.WriteLine(" La lettre " + saisieLettre + " est présente " + occurence + " fois ");
+                }
+
+            }
         }
     }
 }
