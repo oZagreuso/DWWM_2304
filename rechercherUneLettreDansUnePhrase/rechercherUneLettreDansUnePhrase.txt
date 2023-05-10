@@ -26,10 +26,22 @@ LIRE saisiePhrase
 ECRIRE " Entrer une lettre "
 LIRE saisieLettre
 
-TANT QUE l'indice i  < à saisiePhrase longueur
-	incrémenter i de 1
-SI l'indice pointé sur saisiePhrase <- saisieLettre
-	incrémenter occurence de 1
+SI saisiePhrase = "" ou saisiePhrase = "."
+	ALORS ECRIRE " La phrase est vide "
+FIN SI
+
+SINON
+	TANT QUE l'indice i  < à saisiePhrase longueur 
+	
+		SI l'indice pointé sur saisiePhrase = saisieLettre
+		incrémenter occurence de 1
+
+		incrémenter indice de 1
+
+		SI occurence = 0
+			ECRIRE " La lettre n'est pas présente "
+		SINON
+			ECRIRE " La lettre " , saisieLettre , " est présente ", occurence , " fois "
 
 
 

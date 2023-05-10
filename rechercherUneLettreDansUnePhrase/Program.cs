@@ -26,7 +26,7 @@ namespace rechercherUneLettreDansUnePhrase
             else
             {
                
-                while (i < saisiePhrase.Length - 1)
+                while (i < saisiePhrase.Length)
                 {
                     if (saisieLettre == saisiePhrase[i])
                     {
