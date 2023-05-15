@@ -11,13 +11,14 @@ alphabetTab est une chaîne de caractères, est un tableau a,b,c...
 
 ECRIRE " Programme pour dénombrer le nombre d'occurences de lettres de l'alphabet dans un texte "
 ECRIRE " Entrer un texte de 120 caractères minimum "
-LIRE texte
+LIRE saisieTexte
 
-SI indiceTexte < 120
-	ALORS ECRIRE " Texte est trop court "
-FIN SI
+TANT QUE indiceTexte < 120
+	ALORS ECRIRE " Texte est trop court, veuillez entre un nouveau texte "
+	LIRE saisieTexte
+FIN TANT QUE
 
-SINON
+SI
 	POUR indiceAlphabet = 0,, de 0 à |indiceAlphabet| exclu ,  indiceAlphabet ++
 	occurences = 0 est un entier
 		POUR indiceTexte = 0, de 0 à |texte| exclu, indiceTexte ++
@@ -27,5 +28,5 @@ SINON
 		FIN POUR
 		ECRIRE " La lettre " , alphabet à l'indice i , " est présente " , occurences
 	FIN POUR
-FIN SINON
+FIN SIN
 			

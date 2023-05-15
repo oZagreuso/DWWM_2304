@@ -16,11 +16,12 @@ namespace denombrerLettreAlphabetDansTableau
             Console.WriteLine(" Entrez un texte de 120 carractères minimum ");
             string saisieTexte = Console.ReadLine();
 
-            if (saisieTexte.Length < 120)
+            while (saisieTexte.Length < 120)
             {
-                Console.WriteLine(" Texte trop court  ");
+                Console.WriteLine(" Texte trop court, veuillez entrer un autre texte ");
+                saisieTexte = Console.ReadLine();
             }
-            else
+            if (saisieTexte.Length >= 120)
             {
                 for (int i = 0; i < alphabetTab.Length; i++)
                 {
