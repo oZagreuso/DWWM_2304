@@ -15,9 +15,7 @@ namespace rechercherUneLettreDansUnePhrase
 
             Console.WriteLine(" Entrer une phrase ");
             saisiePhrase = (Console.ReadLine());
-            Console.WriteLine(" Entrer une lettre ");
-            saisieLettre = char.Parse(Console.ReadLine());
-
+            
 
             if (saisiePhrase == "" || saisiePhrase == ".")
             {
@@ -25,8 +23,10 @@ namespace rechercherUneLettreDansUnePhrase
             }
             else
             {
-               
-                while (i < saisiePhrase.Length)
+                Console.WriteLine(" Entrer une lettre ");
+                saisieLettre = char.Parse(Console.ReadLine());
+
+                for (i = 0; i < saisiePhrase.Length; i++)
                 {
                     if (saisieLettre == saisiePhrase[i])
                     {

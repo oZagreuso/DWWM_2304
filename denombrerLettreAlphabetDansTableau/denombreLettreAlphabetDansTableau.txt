@@ -6,23 +6,26 @@ Compter et afficher le nombre d’occurrences (d’apparitions) de chacune des l
 
 VARIABLES
 
-texte est une chaîne de caractères, est un tableau
-alphabet est une chaîne de caractères, est un tableau a,b,c...
-indicetexte = 0 est un entier 
-indiceAlphabet = 0 est un entier
+saisieTexte est une chaîne de caractères, est un tableau
+alphabetTab est une chaîne de caractères, est un tableau a,b,c...
 
-occurencesC = 0 est un
-texteTailleMin = 120 est un entier
-
-
-ECRIRE " Programme pour dénombrer les lettres de l'alphabet dans un tableau "
-ECRIRE " Entrer un texte d'au moins 120 caractères "
+ECRIRE " Programme pour dénombrer le nombre d'occurences de lettres de l'alphabet dans un texte "
+ECRIRE " Entrer un texte de 120 caractères minimum "
 LIRE texte
 
-SI indice < 120
-	ALORS ECRIRE " Le nombre de caractères dans le texte est insuffisant "
+SI indiceTexte < 120
+	ALORS ECRIRE " Texte est trop court "
+FIN SI
 
 SINON
-	POUR indiceAlphabet = 0, indiceAlphabet de 0 à 25, incrémenter indiceAlphabet
-		POUR indiceTexte = 0, de 0 à |texte| exclu, incrémenter indiceTexte
-			ECRIRE
+	POUR indiceAlphabet = 0,, de 0 à |indiceAlphabet| exclu ,  indiceAlphabet ++
+	occurences = 0 est un entier
+		POUR indiceTexte = 0, de 0 à |texte| exclu, indiceTexte ++
+			SI saisieTexte à l'indice j = alphabetTab à l'indice i
+				occurences++
+			FIN SI
+		FIN POUR
+		ECRIRE " La lettre " , alphabet à l'indice i , " est présente " , occurences
+	FIN POUR
+FIN SINON
+			
