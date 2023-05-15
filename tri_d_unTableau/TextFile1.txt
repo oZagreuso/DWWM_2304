@@ -1,0 +1,44 @@
+﻿EXERCICE 4.4 : TRI D’UN TABLEAU
+
+Nous désignerons par a1, a2, …, aN les éléments d’un tableau à trier par ordre croissant.
+
+Exemple: [128, 64, 8, 512, 16, 32, 256]
+
+On commence par chercher l’indice du plus petit des éléments, soit j cet indice.
+
+On permute alors les valeurs de a1 (128) et aj (8).
+
+Le tableau devient [8, 64, 128, 512, 16, 32, 256].
+
+On cherche ensuite l’indice du plus petit des éléments entre a2 et aN et on permute avec a2.
+
+Le tableau devient [8, 16, 128, 512, 64, 32, 256].
+
+On cherche ensuite l’indice du plus petit des éléments a3, a4, …, aN etc…
+
+VARIABLES
+
+triTab est une chaîne de caractères, un tableau, avec les éléments " 128, 64, 8, 512, 16, 32, 256 " à l'intérieur
+
+TRAITEMENT
+
+ECRIRE " Programme de tri d'un tableau "
+ECRIRE " Le Tableau initial, de l'index 0 à 6, comportant dans l'ordre 128, 64, 8, 512, 16, 32, 256, se présentera, après tri, ainsi: "
+
+POUR entier i = 0, avec i inférieur à la longueur de triTab, incrémenter i
+	indiceMin = i, est un entier
+	POUR entier j = i + 1, avec j inférieur à la longueur de triTab, incrémenter j
+		SI triTab à l'indice j est inférieur à triTab à l'indiceMin
+			ALORS indiceMin = j
+		FIN SI
+	FIN POUR
+	SI indiceMin est différent de i
+		ALORS 
+		temp, un entier, est égal à triTab à l'indice i
+		DONC triTab à l'indice i est égal à triTab à l'indiceMin
+		AINSI triTab à l'indiceMin est égal à temp
+	FIN SI
+FIN POUR
+POUR entier k = 0, avec kinférieur à la longueur de triTab, incrémenter k
+	ECRIRE  triTab à l'indice k
+FIN POUR
