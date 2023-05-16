@@ -52,7 +52,7 @@ POUR entier i DE 0 à (phraseLongueur / 2) PAR PAS DE 1
 		ECRIRE " La chaîne de caractère n'est pas un palindrome"
 	FIN SI
 FIN POUR
-SI estPalindrome est VRAI
+SI estPalindrome // sous entendu VRAI
 	ECRIRE " La chaîne de caractères est un palindrome "
 SINON
 	ECRIRE " La chaîne de caractères n'est pas un palindrome "
