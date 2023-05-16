@@ -1,0 +1,59 @@
+﻿EXERCICE 4.5 : PALINDROME
+
+Un palindrome est une chaîne de caractères que l’on peut lire identiquement de droite à gauche, et gauche à droite.
+
+Par exemple:
+
+AA
+38783
+LAVAL
+LAVAL A ETE A LAVAL
+ET LA MARINE VA VENIR A MALTE
+L’utilisateur saisit une chaîne de caractères terminée par un point . (à contrôler).
+
+Ecrivez l’algorithme et le programme permettant d’affirmer si cette phrase est ou non un palindrome.
+
+Si la chaîne de caractères n’est composée que du caractère ‘.’, l’utilisateur est invité à recommencer.
+
+L’algorithme doit prévoir les 3 cas suivants :
+
+la phrase est vide
+la chaîne de caractères n’est pas un palindrome
+la chaîne de caractères est un palindrome
+
+VARIABLES
+
+saisiePhrase est une chaîne de caractères
+estPalindrome <- VRAI, est un bolléen
+conditionsPalindrome <- VRAI, est un booléen
+
+FAIRE
+	ECRIRE " Entrez une phrase se terminant par un point "
+	LIRE saisiePhrase
+
+	SI saisiePhrase est différent = champ de saisie vide
+		ALORS ECRIRE " La saisie est inexacte, le champ est vide, nouvelle saisie requise "
+		conditionPalindromeOk <- FAUX
+	SINON SI saisiePhrase est composée seulement du caractère "."
+		ALORS ECRIRE " La saisie est inexacte, nouvelle saisie requise "
+		conditionsPalindromeOk <- FAUX
+	SINON SI la phrase saisiePhrase, à l'indice - 1, n'est pas le caractère "."
+		ALORS ECRIRE " La saisie est inexacte, la chaîne de caractères ne se termine pas par un point, nouvelle saisie requise "
+		conditionsPalindromeOk passe à FAUX
+	SINON
+		conditionsPalindromeOk <- VRAI
+	FIN SI
+TANT QUE NON conditionsPalindromeOk
+
+POUR entier i DE 0 à (phraseLongueur / 2) PAR PAS DE 1
+	SI saisiePhrase[i] ≠ saisiePhrase[phraseLongueur - 2 -i]
+		ALORS 
+		estPalindrome <- FAUX
+		ECRIRE " La chaîne de caractère n'est pas un palindrome"
+	FIN SI
+FIN POUR
+SI estPalindrome est VRAI
+	ECRIRE " La chaîne de caractères est un palindrome "
+SINON
+	ECRIRE " La chaîne de caractères n'est pas un palindrome "
+FIN SI
