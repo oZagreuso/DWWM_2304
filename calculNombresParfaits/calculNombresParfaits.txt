@@ -20,6 +20,25 @@ Affichage des 4 premiers nombres parfaits :
 
 VARIABLES
 
-somme = 0, est un entier
-estNombreParfait est un booléen
+nombre = 1 est un entier
+compteur = 0 est un entier
+diviseur est un entier
+sommeDiviseurs est un entier
+
+TRAITEMENT
+
+TANT QUE compteur <- 4
+	déclaration somme <- 0
+	POUR diviseur <- 1 , diviseur de 1 à diviseur, par PAS de 1
+		SI le reste de (nombre/diviseur) = 0
+			ALORS la sommeDiviseurs <- somme + ajout
+		FIN SI
+	FIN POUR
+	SI sommeDiviseurs = nombre
+		ALORS ECRIRE nombre, " est un nombre parfait "
+		compteur++
+	FIN SI
+	nombre++
+FIN TANT QUE
+		
 

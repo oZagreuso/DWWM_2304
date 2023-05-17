@@ -4,19 +4,26 @@
     {
         static void Main(string[] args)
         {
-            int somme = 0;
-            int sommeDiviseurs = 0;
-            int nombreAffichages = 0;
+            int nombre = 1;          
+            int compteur = 0;          
 
-            while (nombreAffichage)
-            for (int i = 1; i < n; i++)
+            while (compteur <= 4)
             {
-                if (n % i == 0)
+                int sommeDiviseurs = 0;
+                for (int diviseur = 1; diviseur < nombre; diviseur++)
                 {
-                    somme = i++;
+                    if (nombre % diviseur == 0)
+                    {
+                        sommeDiviseurs += diviseur; // exemple:  sommeDiviseur = (somme diviseur + diviseur) <- ajout
+                    }
                 }
+                if (sommeDiviseurs == nombre)
+                {
+                    Console.WriteLine(nombre + " est un nombre parfait");
+                    compteur++;
+                }
+                nombre++;
             }
-            Console.WriteLine("Hello, World!");
         }
     }
 }
