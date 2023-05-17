@@ -8,8 +8,19 @@ namespace denombrerLettreAlphabetDansTableau
     {
         static void Main(string[] args)
         {
+            string alphabet2 = "";
+            for (char i = 'a'; i <= 'z'; i++) // autre façon de faire le tableau alhabet
+            {
+                alphabet2 += i;
+               
+            }
+            Console.WriteLine(alphabet2);
 
-            string alphabetTab = "abcdefghijklmnopqrstuvwxyz";                 
+            string alphabetTab = "abcdefghijklmnopqrstuvwxyz";
+
+            int[] occurencesAlphaLettres = new int[26];
+
+
 
             Console.WriteLine(" Programme pour dénombrer le nombre d'occurences de lettres de l'alphabet dans un texte ");
 
@@ -25,16 +36,28 @@ namespace denombrerLettreAlphabetDansTableau
             {
                 for (int i = 0; i < alphabetTab.Length; i++)
                 {
-                    int occurences = 0;
+                    //int occurences = 0;
                     for (int j = 0; j < saisieTexte.Length; j++)
                     {
-                        if (saisieTexte[j] == alphabetTab[i])
+                        if (saisieTexte[j].Equals(alphabetTab[i]))
                         {
-                            occurences++;
-                        }  
+                            occurencesAlphaLettres[i]++;
+                            //  occurences++;
+                        }
                     }
-                    Console.WriteLine(" la lettre " + alphabetTab[i] + " présente " + occurences);
-                }                
+                 
+                }
+                for (int i = 0; i < alphabetTab.Length; i++)
+                {
+                    if (occurencesAlphaLettres[i] != 0)
+                    {
+                        Console.WriteLine(" La lettre " + alphabetTab[i] + " est présente :" + occurencesAlphaLettres[i] + " fois dans la phrase saisie ");
+                    }
+
+                }
+
+                
+
             }
 
         }
