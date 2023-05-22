@@ -6,21 +6,21 @@
         {
             string saisie;
             double valeur;
-            bool conditionsSaisieOk = true;
+            bool conditionSaisieOk = true;
             double km = 0;
             double miles = 0;
 
             do
             {
                 Console.WriteLine(" Programme de conversion de kilomètres en miles ");
-                Console.WriteLine(" Saisir une valeur en Km entre 0,01 et 1 000 000, sinon quitter avec la touche Q ");
+                Console.WriteLine(" Saisir une valeur en km entre 0,01 et 1 000 000, sinon quitter avec la touche Q ");
                 saisie = Console.ReadLine();
 
 
                 if (saisie == "q")
                 {
                     Console.WriteLine(" FIN PROGRAMME ");
-                    conditionsSaisieOk = false;
+                    conditionSaisieOk = false;
 
                 }
                 else
@@ -33,16 +33,16 @@
                     }
                     else
                     {
-                        Console.WriteLine(" Valeur en dehors de la limite, saisir une nouvelle valeur comprise entre 0.01 et ,1000000 km ");
+                        Console.WriteLine(" Valeur en dehors de la limite, saisir une nouvelle valeur comprise entre 0.01 et ,1 000 000 km ");
                     }
                 }
                 else
                 {
-                    Console.WriteLine(" ERREUR! saisie invalide! Renseigner une nouvelle valeur entre 0.01 et 1000000 ");
+                    Console.WriteLine(" ERREUR! saisie invalide! Renseigner une nouvelle valeur entre 0.01 et 1 000 000 ");
                 }
 
             }
-            while (!conditionsSaisieOk);
+            while (!conditionSaisieOk);
         }
     }
 }
