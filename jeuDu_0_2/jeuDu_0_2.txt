@@ -19,7 +19,7 @@ pointsJoueur = 0 est un entier
 pointsOrdinateurs = 0 est un entier
 choixJoueur = 0 est un entier
 choix est une caîne de caractères
-stop = false est un booléen
+stop EST FAUX est un booléen
 
 FAIRE
 
