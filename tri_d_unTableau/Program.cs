@@ -44,7 +44,7 @@ namespace tri_d_unTableau
             
             for (int k = 0; k < _myTable.Length; k++)
             {
-                Console.Write(_myTable[k] + " ");
+                Console.Write(" ------ " + _myTable[k] + " ");
             }
             Console.WriteLine(" \n ------FIN------ ");
 
