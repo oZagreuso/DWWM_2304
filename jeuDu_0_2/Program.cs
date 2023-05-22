@@ -17,11 +17,12 @@
                 do
                 {
 
-                    Console.WriteLine(" Saisir un nombre soit 0 ou 1 ou 2 ");
+                    Console.WriteLine(" Saisir un nombre au choix 0, 1 ou 2 ");
                     choix = Console.ReadLine();
 
                 } while (int.TryParse(choix, out choixJoueur) == false && choixJoueur >= 3);
-                if (choixJoueur < 0)
+
+                else if (choixJoueur < 0)
                 {
                     stop = true;
                 }  
@@ -32,7 +33,7 @@
                 else
                 {
                     Random rnd = new Random();
-                    int choixOrdinateur = rnd.Next(0, 2);
+                    int choixOrdinateur = rnd.Next(0, 3);
 
                     int difference = Math.Abs(choixJoueur - choixOrdinateur);
 
@@ -67,7 +68,7 @@
 
             if (pointsJoueur == 10 && pointsOrdinateur < 10)
             {
-                Console.Write(" Vous avez gagné ");
+                Console.Write(" --- YOU WIN --- ");
 
             }
             else if (pointsOrdinateur == 10 && pointsJoueur < 10)
