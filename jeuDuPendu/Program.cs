@@ -5,9 +5,7 @@
         static void Main(string[] args)
         {
             string choixMot;
-            bool motOk = false;
-            bool lettreOk = false;
-            int nombreEssais = 6;
+
 
             Console.WriteLine(" --- Bienvenue sur le jeu du Pendu --- ");
 
@@ -18,22 +16,29 @@
             }
             while (choixMot.Length < 5);
 
+
+            bool motOk = false;
+            int nombreEssais = 6;
+
             do
             {
-               
-
                 char[] motSecret = new char[choixMot.Length];
 
                 for (int i = 1; i < choixMot.Length - 1; i++)
                 {
-                    motSecret[i] = '-';
+                    motSecret[i] = '_';
                 }
+
+                motSecret[0] = choixMot[0];
+                motSecret[motSecret.Length - 1] = choixMot[choixMot.Length - 1];
 
                 Console.WriteLine(" Le mot a deviner est " + new string(motSecret));
                 Console.WriteLine(" Il vous reste " + nombreEssais + " essais ");
 
-                Console.WriteLine(" JOUEUR 2: saisir lettre ");
-                char choixLettre = Console.ReadKey() .KeyChar;
+                Console.WriteLine(" --- JOUEUR 2: saisir lettre --- ");
+                char choixLettre = char.Parse(Console.ReadLine());
+
+                bool lettreOk = false;
 
                 for (int i = 1; i < choixMot.Length - 1; i++)
                 {
@@ -55,7 +60,7 @@
                     motOk = true;
                 }
             }
-            while (nombreEssais > 0  && !motOk);
+            while (nombreEssais > 0 && !motOk);
 
             if (motOk)
             {
