@@ -6,3 +6,23 @@ L'algorithme affiche ensuite le mot où toutes les lettres sauf la première et 
 Un deuxième joueur propose des lettres une à une. 
 Chaque fois que la lettre se trouve dans le mot, l'algorithme remplace les tirets qui remplaçaient cette lettre et réaffiche le mot. 
 Le second joueur a droit à un maximum de 6 essais infructueux (lettre ne se trouvant pas dans le mot).
+
+VARIABLES
+
+saisieJoueur1 est une chaîne de caractères, est un tableau
+nombreEssai = 0 est un entier
+youWin EST FAUX est un booléen
+saisieJoueur2 est un caractère (char)
+
+TRAITEMENT
+
+FAIRE
+
+	ECRIRE " Jeu du Pendu "
+	ECRIRE " Choisir un mot. Minimum 5 caractères "
+	LIRE saisieJoueur1
+
+	SI saisieJoueur1 < longueur de saisie(length)
+		ECRIRE " Mot trop court! Choisir un nouveau mot. Minimum 5 caractères "
+	ELSE LIRE saisieJoueur1 sauf première et
+TANT QUE nombreEssai <=6 
