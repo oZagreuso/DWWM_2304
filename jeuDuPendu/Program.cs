@@ -17,48 +17,62 @@
             while (choixMot.Length < 5);
 
 
-            bool motOk = false;
+            bool motOk = true;
             int nombreEssais = 6;
+
+            char[] motSecret = choixMot.ToCharArray();
+
+            Console.Clear();
+
+            for (int i = 1; i < choixMot.Length - 1; i++)
+            {
+                motSecret[i] = '_';
+            }
+            motSecret[0] = choixMot[0];
+            motSecret[motSecret.Length - 1] = choixMot[choixMot.Length - 1];
+
 
             do
             {
-                char[] motSecret = new char[choixMot.Length];
+               
 
-                for (int i = 1; i < choixMot.Length - 1; i++)
-                {
-                    motSecret[i] = '_';
-                }
-
-                motSecret[0] = choixMot[0];
-                motSecret[motSecret.Length - 1] = choixMot[choixMot.Length - 1];
-
-                Console.WriteLine(" Le mot a deviner est " + new string(motSecret));
-                Console.WriteLine(" Il vous reste " + nombreEssais + " essais ");
+              
+               
+                    Console.WriteLine(" Il vous reste " + nombreEssais + " essais ");
 
                 Console.WriteLine(" --- JOUEUR 2: saisir lettre --- ");
-                char choixLettre = char.Parse(Console.ReadLine());
+                char choixLettre = char.Parse(Console.ReadLine().ToLower());
 
                 bool lettreOk = false;
 
                 for (int i = 1; i < choixMot.Length - 1; i++)
                 {
-                    if (motSecret[i] == choixLettre)
+                    if (choixMot[i].CompareTo(choixLettre)==0)
                     {
                         motSecret[i] = choixLettre;
                         lettreOk = true;
                     }
                 }
 
-                if (!lettreOk)
+                if (lettreOk)
                 {
                     nombreEssais--;
-                    Console.WriteLine(" Lettre ne figure pas dans le mot ");
+                    Console.WriteLine(" Il vous reste "+ nombreEssais );
                 }
+                Console.WriteLine(" --- Le mot a deviner est --- ");
 
-                if (new string(motSecret) == choixMot)
+                foreach (char element in motSecret)
                 {
-                    motOk = true;
+                    Console.Write(element + " ");
                 }
+                
+                for (int i = 1; i < motSecret.Length - 1; i++)
+                {
+                    if (motSecret[i] == 95)
+                    {
+                        motOk = false;
+                    }
+                }          
             }
             while (nombreEssais > 0 && !motOk);
 
