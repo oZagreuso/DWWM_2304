@@ -37,7 +37,7 @@
 
                 for (int i = 1; i < choixMot.Length - 1; i++)
                 {
-                    if (choixMot[i] == choixLettre)
+                    if (motSecret[i] == choixLettre)
                     {
                         motSecret[i] = choixLettre;
                         lettreOk = true;
