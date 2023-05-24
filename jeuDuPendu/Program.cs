@@ -32,13 +32,12 @@
             {
                 motSecret[i] = '_';
             }
+
             motSecret[0] = choixMot[0];
             motSecret[motSecret.Length - 1] = choixMot[choixMot.Length - 1];
 
-
             do
             {
-
                 Console.WriteLine(" --- Le mot SECRET est --- ");
                 Console.WriteLine();
 
