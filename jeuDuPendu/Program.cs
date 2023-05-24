@@ -103,8 +103,10 @@
             {
                 Console.WriteLine(" --- GAME OVER ---");
                 Console.WriteLine();
-                Console.WriteLine(" Le mot SECRET était : " + choixMot);
+               
             }
+            Console.WriteLine();
+            Console.WriteLine(" --- Le mot SECRET était : " + choixMot + " --- ");
         }
     }
 }
