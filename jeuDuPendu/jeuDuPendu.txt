@@ -9,20 +9,81 @@ Le second joueur a droit à un maximum de 6 essais infructueux (lettre ne se tro
 
 VARIABLES
 
-saisieJoueur1 est une chaîne de caractères, est un tableau
-nombreEssai = 0 est un entier
-youWin EST FAUX est un booléen
-saisieJoueur2 est un caractère (char)
+choixMot est une chaîne de caractère, est un tableau
 
 TRAITEMENT
 
 FAIRE
 
-	ECRIRE " Jeu du Pendu "
-	ECRIRE " Choisir un mot. Minimum 5 caractères "
-	LIRE saisieJoueur1
+	ECRIRE " --- Bienvenue sur le jeu du Pendu --- "
+	ECRIRE " --- JOUEUR 1: choisir un mot de 5 caractères minimum --- "
+	LIRE choixMot
 
-	SI saisieJoueur1 < longueur de saisie(length)
-		ECRIRE " Mot trop court! Choisir un nouveau mot. Minimum 5 caractères "
-	ELSE LIRE saisieJoueur1 sauf première et
-TANT QUE nombreEssai <=6 
+	SI choixMot longueur < 5
+		ECRIRE " --- Le mot est trop court, choisir un nouveau mot de 5 caractères minimum --- "
+	FIN SI
+
+TANT QUE choixMont longueur < 5
+FIN FAIRE TANT QUE
+
+motOk EST FAUX est un booléen
+nombreEssais entier <- 6
+
+motSecret est un tableau de CHAR correspondant au tableau choixMot
+
+NETOYER Console
+
+POUR un entier i <- 1, de i à longueur choixMot - 1, i++
+	motSecret à l'indice i <- ' _ '
+FIN POUR
+
+motSecret à l'indice 0 <- choixMot à l'indice 0
+motSecret à l'indice longueur motSecret - 1 <- choixMot à l'indice longueur choixMot - 1
+
+FAIRE
+
+	ECRIRE " --- Le mot SECRET est --- "
+	
+	POUR CHAQUE 'element' CHAR dans tableau motSecret
+		ECRIRE 'element' + " "
+
+	ECRIRE " --- JOUEUR 2: saisir lettre --- "
+
+	choixLettre est un tableau de CHAR <- lire saisie Console <- minuscules
+
+	lettreOk <- FAUX est un booléen
+
+	POUR entier i <- 1, de i à choixMot longueur - 1, i++
+
+		SI choixMot à l'indice i comparé à choixLettre <- 0
+		ALORS 
+		motSecret à l'indice i <- choixLettre
+		lettreOk EST VRAI
+		FIN SI
+	FIN POUR
+
+	SI lettreOk <- VRAI
+		ECRIRE " --- EUREKA, lettre trouvée --- "
+	ELSE
+		nombresEssais - 1
+		ECRIRE " --- YOU LOSE --- "
+		ECRIRE " --- SAME PLAYER TRY AGAIN --- "
+		ECRIRE " Il vous reste " + nombreEssais + " essais "
+	FIN SI
+
+	POUR entier i <- 1, de i à longueur de motSecret -1, i++
+		motOk <- VRAI
+		SI motSecret à l'indice i = 95 // 95 = " _ " en Ascii
+			motOk <- FAUX
+		FIN SI
+	FIN POUR
+TANT QUE nombreEssais > 0 ET QUE motOk <- FAUX
+	SI motOk <- VRAI
+		ECRIRE " --- YOU WIN --- "
+	SINON SI nombreESSAIS <= 0
+		ECRIRE " --- GAME OVER --- "
+		ECRIRE " Le mot Secret était:" + choixMot 
+	FIN SI
+FIN FAIRE TANT QUE
+			
+	

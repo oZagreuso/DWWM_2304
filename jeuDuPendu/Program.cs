@@ -67,9 +67,10 @@
                 }
 
                 if (lettreOk)
-                {                    
+                {
+                    Console.WriteLine();
                     Console.WriteLine(" --- EUREKA, lettre trouvée --- ");
-                  
+                    Console.WriteLine();
                 }
                 else
                 {
@@ -88,11 +89,9 @@
                     if (motSecret[i] == 95)
                     {
                         motOk = false;
-                        
-                    }
 
-                }         
-                
+                    }
+                }
             }
             while (nombreEssais > 0 && !motOk);
 
