@@ -23,18 +23,10 @@
 
             bool motOk = false;
             int nombreEssais = 6;
-
-            char[] motSecret = choixMot.ToCharArray();
-
             Console.Clear();
 
-            for (int i = 1; i < choixMot.Length - 1; i++)
-            {
-                motSecret[i] = '_';
-            }
+            char[] motSecret = hideWord(choixMot);
 
-            motSecret[0] = choixMot[0];
-            motSecret[motSecret.Length - 1] = choixMot[choixMot.Length - 1];
 
             do
             {
@@ -106,6 +98,19 @@
             }
             Console.WriteLine();
             Console.WriteLine(" --- Le mot SECRET était : " + choixMot + " --- ");
+        }
+         public static char[] hideWord(string _hiddenWord)
+        {
+            char[] wordArray = _hiddenWord.ToCharArray();
+
+
+
+            for (int i = 1; i < _hiddenWord.Length - 1; i++)
+            {
+                wordArray[i] = '_';
+            }
+
+            return wordArray;
         }
     }
 }
