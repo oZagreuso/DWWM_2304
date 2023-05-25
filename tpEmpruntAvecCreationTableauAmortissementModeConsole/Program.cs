@@ -33,6 +33,5 @@
 
             Console.WriteLine("La mensualité constante à rembourser est : " + mensualite);
         }
-
     }
 }
