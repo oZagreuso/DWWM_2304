@@ -37,6 +37,7 @@
                 {
                     Console.Write(element + " ");
                 }
+
                 Console.WriteLine();
                 Console.WriteLine();
                 Console.WriteLine(" --- Il vous reste " + nombreEssais + " essais --- ");
@@ -102,8 +103,6 @@
          public static char[] hideWord(string _hiddenWord)
         {
             char[] wordArray = _hiddenWord.ToCharArray();
-
-
 
             for (int i = 1; i < _hiddenWord.Length - 1; i++)
             {
